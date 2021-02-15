@@ -1,0 +1,103 @@
+*{
+    padding:00;
+    margin: 0;
+    font-weight: 200;
+    
+    font-family:Helvetica,;
+}
+
+body {
+    background-color: rgb(0, 173, 179);
+    height: 100vh;
+
+}
+
+.panels{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.panel{
+    text-align: center;
+    align-items: center;
+    flex: 1 ;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    transition: 0.5s;
+    background: 0.5s;
+}
+
+.panel p{
+    font-size: 2rem;
+    color:white;
+}
+
+.panel p:nth-child(2){
+
+    font-size: 4rem;
+    font-family: cursive , sans-serif;
+    color: white;
+}
+
+
+.panel>*{
+    flex: 1 0 auto;
+  
+}
+
+.panel >*:first-child{ transform: translateY(-100%);}
+.panel.open >*:first-child{ transform: translateY(0%);}
+
+.panel >*:last-child{ transform: translateY(-500%);}
+.panel.open >*:last-child{ transform: translateY(0%);}
+
+.panel.open{
+    flex: 5;
+    font-size: 40px;
+}
+
+.panel1{
+    background-image:url(images/1.jpg) ;
+    background-size: cover;
+    height: 100%;
+    font-weight: 100px
+}
+
+
+
+.panel2{
+    background-image:url(images/2.jpg) ;
+    background-size: cover;
+    text-align: center;
+  
+ 
+}
+
+.panel3{
+    background-image:url(images/3.jpg) ;
+    background-size: cover;
+    text-align: center;
+ 
+
+}
+
+.panel4{
+    background-image:url(images/4.jpg) ;
+    background-size: cover;
+    text-align: center;
+  
+    
+}
+
+.panel5{
+    background-image:url(images/5.jpg) ;
+    background-size: cover;
+    text-align: center;
+  
+   
+}
+
